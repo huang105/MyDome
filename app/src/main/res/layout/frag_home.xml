@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#ff0000"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="今日头条"
+            android:textColor="#e1faf6f6"
+            android:textSize="20sp" />
+
+        <SearchView
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:background="#F0F0F0F0"></SearchView>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="horizontal">
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        app:tabIndicatorColor="#df1a10"
+        app:tabSelectedTextColor="#f3f40c0c"
+        android:layout_weight="5"
+        app:tabTextColor="#f31a1919"></android.support.design.widget.TabLayout>
+<ImageButton
+    android:id="@+id/pindao"
+    android:layout_width="0dp"
+    android:layout_height="45dp"
+    android:layout_weight="1"
+    android:background="#f5f9f4f4"
+    android:src="@drawable/ado"/>
+</LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+
+</LinearLayout>
